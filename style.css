@@ -237,6 +237,64 @@ a .material-icons {
     }
 }
 
+.project-card {
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: #fff;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 10px;
+    margin: 0;
+    color: #333;
+}
+
+.gallery a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-col {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.gallery a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .profile-page .description {
     margin: 1.071rem auto 0;
     max-width: 1000px;
